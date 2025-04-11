@@ -1,57 +1,100 @@
-🐦 Twitter-Look-a-Like
-A basic Twitter-style app built using Flask (Python) for the backend and React + Vite for the frontend.
+# 🐦 **Twitter Look-a-Like**
 
-✨ Features
-🔐 User registration and login
+> A sleek Twitter-inspired web app built using **Flask (Python)** for the backend and **React + Vite** for the frontend.
 
-🔒 Protected home page after login
+---
 
-🔁 Simple routing with React Router
+## 🚀 **Features**
 
-🗃️ Flask backend with SQLite database
+- 🔐 **User Authentication** (Register/Login)
+- 🏠 **Protected Home Page** (only accessible after login)
+- 🔒 **Secure Password Hashing** with Flask-Bcrypt
+- 🔄 **Frontend Routing** using React Router
+- 🧠 **SQLite + SQLAlchemy** database integration
 
-🧰 Tech Stack
-⚛️ Frontend: React, Vite, React Router, Axios
+---
 
-🐍 Backend: Flask, Flask-CORS, Flask-Bcrypt, SQLAlchemy
+## ⚙️ **Tech Stack**
 
-🚀 Getting Started
-🖥️ Backend (Flask)
-Navigate to the backend folder:
+**Frontend:**
+- ⚛️ React + Vite
+- 🌐 React Router DOM
+- 🔗 Axios
+
+**Backend:**
+- 🐍 Flask
+- 🔐 Flask-Bcrypt
+- 🔄 Flask-CORS
+- 📍 SQLAlchemy + SQLite
+
+---
+
+## 📦 **Project Structure**
+
+```
+twitter-look-a-like/
+├── backend/
+│   ├── app.py
+│   ├── models.py
+│   └── ...
+└── frontend/
+    ├── src/
+    │   └── pages/
+    │       ├── Intro.jsx
+    │       ├── Register.jsx
+    │       ├── Login.jsx
+    │       └── Home.jsx
+    └── ...
+```
+
+---
+
+## 💪 **Getting Started**
+
+### 🔧 Backend Setup
+
+```bash
 cd backend
-
-(Optional) Create and activate a virtual environment:
 python -m venv venv
+# Activate:
+# Windows:
+venv\Scripts\activate
+# macOS/Linux:
+source venv/bin/activate
 
-🪟 On Windows: venv\Scripts\activate
-
-🐧 On macOS/Linux: source venv/bin/activate
-
-Install dependencies:
 pip install -r requirements.txt
-
-Run the backend server:
 python app.py
+```
 
-🌐 Frontend (React + Vite)
-Navigate to the frontend folder:
+### 💻 Frontend Setup
+
+```bash
 cd frontend
-
-Install frontend dependencies:
 npm install
-
-Start the frontend dev server:
 npm run dev
+```
 
-📄 Pages
-🔰 /intro – Welcome screen with buttons to Register or Login
+---
 
-📝 /register – Registration page with a link to Login
+## 🌍 **Available Routes**
 
-🔑 /login – Login page with a link to Register
+### 🔒 Frontend Pages
 
-🏠 / – Home page after successful login (with logout option)
+- `/intro` — Welcome screen with **Register/Login** buttons
+- `/register` — **New user registration** page
+- `/login` — **User login** page
+- `/` — **Home** (after login) with **Logout** button
 
-👨‍💻 Author
-Donuts-procodes
-🌐 GitHub: https://github.com/Donuts-procodes
+### ⚙️ Backend API
+
+- `POST /api/register` — Register a new user
+- `POST /api/login` — Login an existing user
+
+---
+
+## 👤 **Author**
+
+**Donuts-procodes**  
+🔗 GitHub: [https://github.com/Donuts-procodes](https://github.com/Donuts-procodes)
+
+---
