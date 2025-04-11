@@ -7,7 +7,7 @@ app = Flask(__name__)
 CORS(app)
 
 app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///data.db'
-app.config['SECRET_KEY'] = 'your_secret_key'
+app.config['SECRET_KEY'] = 'variance'
 
 db = SQLAlchemy(app)
 bcrypt = Bcrypt(app)
